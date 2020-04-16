@@ -17,6 +17,19 @@ set number
 " Highlight line number only (No highlight current line)
 set cursorline
 hi clear CursorLine
+" Treat ambiguous-width characters as double width
+set ambiwidth=double
+" Exchange Tab to 4-Space
+set expandtab
+set shiftwidth=4
+set tabstop=4
+" Display some control charactor
+" [Reference] https://qiita.com/pollenjp/items/459a08a2cc59485fa08b
+set list
+set listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:%
+" Typewriter scroll
+" [Reference] https://sites.google.com/site/fudist/Home/vim-nihongo-ban/vim-japanese
+set scrolloff=9999
 
 """ Status Line Settings
 """ [Reference] https://qiita.com/tashua314/items/101f1bec368c75a90251
